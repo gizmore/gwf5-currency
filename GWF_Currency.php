@@ -4,6 +4,8 @@
 */
 final class GWF_Currency extends GDO
 {
+// 	public function gdoCached() { return false; }
+	
 	###########
 	### GDO ###
 	###########
