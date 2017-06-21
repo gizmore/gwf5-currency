@@ -19,7 +19,7 @@ final class Currency_Cronjob extends GWF_MethodCronjob
 		
 		if ($lastTry !== $nowTry)
 		{
-			$module->saveConfigValue('ccy_last_try', time());
+			$module->saveConfigVar('ccy_last_try', time());
 			$this->syncCurrencies($module);
 		}
 	}

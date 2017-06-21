@@ -26,7 +26,7 @@ final class Module_Currency extends GWF_Module
 		);
 	}
 	public function cfgUpdateEnabled() { return $this->cfgUpdateFrequency() > 0; }
-	public function cfgLastTry() { return $this->getConfigValue('ccy_last_try'); }
+	public function cfgLastTry() { return $this->getConfigVar('ccy_last_try'); }
 	public function cfgLastSync() { return $this->getConfigValue('ccy_last_sync'); }
 	public function cfgUpdateFrequency() { return $this->getConfigValue('ccy_update_fqcy'); }
 	
