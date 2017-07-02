@@ -16,10 +16,9 @@ final class Currency_Cronjob extends GWF_MethodCronjob
 		$frequency = $module->cfgUpdateFrequency();
 		$lastTry = round($module->cfgLastTry() / $frequency);
 		$nowTry = round(time() / $frequency);
-		
 		if ($lastTry !== $nowTry)
 		{
-			$module->saveConfigVar('ccy_last_try', time());
+			$module->saveConfigValue('ccy_last_try', time());
 			$this->syncCurrencies($module);
 		}
 	}
