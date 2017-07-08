@@ -11,6 +11,7 @@ final class Module_Currency extends GWF_Module
 	##############
 	### Module ###
 	##############
+	public $module_priority = 10;
 	public function onLoadLanguage() { return $this->loadLanguage('lang/currency'); }
 	public function getClasses() { return array('GWF_Currency'); }
 
